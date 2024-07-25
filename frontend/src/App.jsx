@@ -5,7 +5,7 @@ import { Home } from './Pages/Home';
 import Footer from './Components/Footer';
 import './App.css'
 
-// import { Navbar } from './Components/Navbar';
+import { Navbar } from './Components/Navbar';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -19,16 +19,16 @@ function App() {
   
 
   return (
-    <>
+    <div className='bg-[#0b0b0b]'>
       <Router>
         <ScrollToTop />
-        {/* <NavBar /> */}
+        <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
         </Routes>
         <Footer />
       </Router>
-    </>
+    </div>
   )
 }
 
