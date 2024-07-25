@@ -1,11 +1,8 @@
 import React from 'react';
-// import logo from '../assets/footerAssets/Logo.svg';
 import footerBg from '../assets/footerAssets/footerBgImg.svg'
-import logo from '../assets/footerAssets/footerLogo.svg'
 import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
-import { HiOfficeBuilding } from "react-icons/hi";
 
 function Footer() {
     return (
@@ -15,7 +12,6 @@ function Footer() {
                     <div className="flex py-20 justify ">
                         <div className="flex flex-col lg:flex-row gap-8 text-white justify-around items-start">
                             <div className="flex flex-col w-full md:w-1/2 ">
-                                {/* <img src={logo} alt="Logo" className="h-14" /> */}
                                 <h1 className="text-4xl font-krona py-4">LYME CAY MEDIA</h1>
                                 <p className=' text-sm text-start'>Lyme Cay Media offers a comprehensive collection of premium stock photos, videos, audio, and templates. Our mission is to provide high-quality media assets to support your creative projects and bring your vision to life.</p>
                             </div>
