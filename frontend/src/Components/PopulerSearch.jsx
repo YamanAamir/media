@@ -87,7 +87,7 @@ export const PopulerSearch = () => {
         <p className='py-6 text-xl'>Here are some of the most popular search requests we see every year.</p>
         <div className='flex flex-wrap justify-center gap-4'>
         {popularSearch.map((search) => (
-           <button className='border border-white py-2 px-5 text-sm rounded-3xl hover:bg-white hover:text-black'>{search.title} </button>
+           <button className='border border-white py-2 px-5 text-sm rounded-3xl hover:bg-gradient-to-r hover:from-[#4546ED] hover:to-[#272887] duration-300'>{search.title} </button>
         ))}
         </div>
         </div>
