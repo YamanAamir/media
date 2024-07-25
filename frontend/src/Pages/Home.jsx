@@ -3,7 +3,7 @@ import { HeroSection } from '../Components/HeroSection'
 
 export const Home = () => {
   return (
-    <div className='container mx-auto px-10'>
+    <div className='xl:px-32'>
         <HeroSection />
     </div>
   )

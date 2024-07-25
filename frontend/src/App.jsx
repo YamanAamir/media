@@ -19,7 +19,7 @@ function App() {
   
 
   return (
-    <div className='bg-[#0b0b0b]'>
+    <div className='bg-[#0b0b0b] p-0'>
       <Router>
         <ScrollToTop />
         <Navbar />
