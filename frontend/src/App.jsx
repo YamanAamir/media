@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 
 import { Home } from './Pages/Home';
+import Footer from './Components/Footer';
+import './App.css'
 
 // import { Navbar } from './Components/Navbar';
 
@@ -24,7 +26,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </Router>
     </>
   )
