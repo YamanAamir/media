@@ -38,7 +38,7 @@ export const Faq = () => {
 
     return (
         <div
-            className="flex justify-center items-start px-5 gap-4 flex-col bg-transparent text-white"
+            className="flex justify-center items-start px-5 my-4 gap-4 flex-col bg-transparent text-white"
         >
             <h1 className='md:text-6xl text-3xl py-8'>Frequently asked questions</h1>
             {faqs.map((faq, index) => (

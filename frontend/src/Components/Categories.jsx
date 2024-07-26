@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { FaPlay, FaPause } from "react-icons/fa";
+// import Ellipse1 from '../assets/Ellipse-1.svg'
 
 function Categories() {
     const categories = [
@@ -52,7 +53,7 @@ function Categories() {
     };
 
     return (
-        <div className='text-white px-4 pb-10'>
+        <div className='relative  text-white px-4 pb-10'>
             <div className='py-5'>
                 <h1 className='text-6xl'>Essential Media Categories</h1>
                 <p className='text-lg'>Where is your next project?</p>
@@ -88,6 +89,7 @@ function Categories() {
                     </div>
                 ))}
             </div>
+            
         </div>
     );
 }
