@@ -7,6 +7,7 @@ import TestimonialsSlider from '../Components/TestimonialsSlider'
 import Discover from '../Components/Discover'
 import BlogsSlider from '../Components/BlogsSlider'
 import Courses from '../Components/Courses'
+import { HowWorks } from '../Components/HowWorks'
 
 export const Home = () => {
   return (
@@ -14,6 +15,7 @@ export const Home = () => {
       <HeroSection />
       <Categories />
       <Discover />
+      <HowWorks />
       <Courses />
       <PopulerSearch />
       <TestimonialsSlider />
