@@ -100,8 +100,8 @@ const BlogsSlider = () => {
  
 
   return (
-    <div className="relative mx-auto my-16   text-white max-w-screen w-full">
-      <h2 className="text-2xl md:text-4xl pb-5 text-center md:text-start">Our Latest Blogs</h2>
+    <div className="relative mx-auto my-16 text-white max-w-screen w-full">
+      <h2 className="text-2xl md:text-4xl pb-5 text-center md:text-start"  data-aos="fade-right">Our Latest Blogs</h2>
 
       <div className="overflow-hidden">
         <div className="flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentSlide * (100 / 2)}%)` }}>
@@ -109,7 +109,7 @@ const BlogsSlider = () => {
             <div key={index} className="flex-shrink-0 w-96 p-2 box-border">
               <img src={slide.img} alt="" className="rounded-2xl w-96" />
               <h1 className="text-start p-2 text-xl">{slide.title}</h1>
-              <button className='flex gap-3 text-sm items-center justify-start my-3 w-40 hover:gap-10 duration-300'> Explore More <img src={Arrow} alt="" /></button>
+              <button className='flex gap-3 text-sm items-center justify-start my-3 w-40 hover:gap-10 duration-300'> Explore More <img src={Arrow} alt="" className='animate-pulse '/></button>
             </div>
           ))}
         </div>
@@ -118,13 +118,13 @@ const BlogsSlider = () => {
       <button
         onClick={handlePrev}
         className="absolute top:1/2  md:top-0  right-10 transform -translate-y-1/2 text-3xl text-gray-800 bg-white rounded-full m-4"
-      >
+        data-aos="zoom-in">
         <FaArrowCircleLeft />
       </button>
       <button
         onClick={handleNext}
         className="absolute top:1/2 md:top-0 right-0 transform -translate-y-1/2 text-3xl text-gray-800 bg-white rounded-full m-4"
-      >
+        data-aos="zoom-out">
         <FaArrowCircleRight />
       </button>
     </div>

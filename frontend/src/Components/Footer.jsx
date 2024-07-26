@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 function Footer() {
     return (
         <>
-            <div className="relative w-full bg-cover lg:px-20 bg-center" style={{ backgroundImage: `url(${footerBg})` }}>
+            <div className="relative  w-full bg-cover lg:px-20 bg-center" style={{ backgroundImage: `url(${footerBg})` }}>
                 <div className="container mx-auto px-10 flex flex-col items-center justify-center relative ">
                     <div className="w-full">
                         <div className="flex py-20 justify ">

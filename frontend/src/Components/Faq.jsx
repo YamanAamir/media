@@ -38,26 +38,27 @@ export const Faq = () => {
 
     return (
         <div
-            className="flex justify-center items-start px-5 my-4 gap-4 flex-col bg-transparent text-white"
+            className="flex justify-center items-start px-5 my-10 gap-4 flex-col bg-transparent text-white"
         >
-            <h1 className='md:text-6xl text-3xl py-8'>Frequently asked questions</h1>
+            <h1 className='md:text-4xl text-2xl py-8' data-aos="fade-right">Frequently asked questions</h1>
             {faqs.map((faq, index) => (
                 <div
                     key={index}
+                    data-aos="fade-left"
                     className="w-full mb-2">
                     <div className="transition duration-300 ">
                         <div
                             className={`flex justify-between items-center roundedxl cursor-pointer ${activeIndex === index ? 'text-white border-2 border-[#272887] rounded-t-xl ' : 'text-white'} ${activeIndex === index ? '' : 'border-b border-gray-400'}`}
                             onClick={() => toggleAccordion(index)}
-                        >
-                            <h1 className='md:text-4xl text-lg p-4 md:p-6'>{faq.question}</h1>
-                            <span className='md:text-4xl text-2xl px-4 '>
+                            >
+                            <h1 className='md:text-xl text-lg p-4 md:p-6'>{faq.question}</h1>
+                            <span className='md:text-2xl text-xl px-4 '>
                                 {activeIndex === index ? <IoIosArrowUp className='animate-bounce' /> : <IoIosArrowDown />}
                             </span>
                         </div>
                         {activeIndex === index && (
                             <div className="p-4 text-white bg-gradient-to-r from-[#4546ED] to-[#272887] rounded-b-xl">
-                                <p className='text-lg md:text-xl px-4'>{faq.answer}</p>
+                                <p className='text-sm md:text-xl px-4'>{faq.answer}</p>
                             </div>
                         )}
                     </div>

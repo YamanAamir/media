@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { HeroSection } from '../Components/HeroSection'
 import { Faq } from '../Components/Faq'
 import { PopulerSearch } from '../Components/PopulerSearch'
@@ -13,9 +13,15 @@ import Ellipse1 from '../assets/Ellipse-1.svg'
 import Ellipse2 from '../assets/Ellipse-2.svg'
 import Ellipse3 from '../assets/Ellipse-3.svg'
 
-
+import AOS from "aos";
+import 'aos/dist/aos.css';
 
 export const Home = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: "1000", delay: "0" });
+  });
+
   return (
     <div className='relative xl:px-32 lg:px-24'>
       <img src={Ellipse1} alt=""  className='absolute left-0 rotate-180 ' />

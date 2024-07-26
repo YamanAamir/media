@@ -81,10 +81,10 @@ export const PopulerSearch = () => {
         },
     ]
   return (
-    <div className='w-full flex justify-center text-white text-center px-2 py-4'>
+    <div className='w-full flex justify-center text-white text-center px-2 py-4 my-12'>
         <div className='w-full md:w-1/2'>
-        <h1 className='text-5xl'>Populer Search Requests</h1>
-        <p className='py-6 text-xl'>Here are some of the most popular search requests we see every year.</p>
+        <h1 className='text-5xl'  data-aos="fade-right">Populer Search Requests</h1>
+        <p className='py-6 text-xl'  data-aos="fade-left">Here are some of the most popular search requests we see every year.</p>
         <div className='flex flex-wrap justify-center gap-4'>
         {popularSearch.map((search) => (
            <button className='border border-white py-2 px-5 text-sm rounded-3xl hover:px-10 hover:bg-gradient-to-r hover:from-[#4546ED] hover:to-[#272887] duration-300'>{search.title} </button>

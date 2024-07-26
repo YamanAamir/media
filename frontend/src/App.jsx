@@ -21,7 +21,7 @@ function App() {
 
 
   return (
-    <div className='bg-[#0b0b0b] p-0'>
+    <div className='bg-[#0b0b0b] p-0 overflow-hidden'>
       <Router>
         <ScrollToTop />
         <Navbar />

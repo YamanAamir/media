@@ -8,12 +8,12 @@ import vedioIcon from '../assets/discoverAssets/videoIcon.svg'
 import rightArrow from '../assets/discoverAssets/rightArrow.svg'
 function Discover() {
     return (
-        <div className='flex lg:flex-row flex-col sm:gap-32 text-white justify-center lg:items-start items-center'>
-            <div className='relative py-10 sm:w-auto w-2/3'>
+        <div className='flex lg:flex-row flex-col sm:gap-32 text-white justify-center lg:items-start items-center my-12'>
+            <div className='relative py-10 sm:w-auto w-2/3'  data-aos="zoom-out">
                 <img src={bgImg} alt="" />
                 <img className='absolute z-10 sm:w-auto w-1/3 sm:bottom-[-100px] bottom-0 sm:right-[-80px] right-[-30px]' src={frImg} alt="" />
             </div>
-            <div className="lg:w-1/2 w-4/5 font-light p-10 flex flex-col gap-4 px-4">
+            <div className="lg:w-1/2 w-4/5 font-light p-10 flex flex-col gap-4 px-4"  data-aos="zoom-in">
                 <div>
                     <h1 className='text-4xl font-semibold py-3'>Discover Top-Tier Media Assets</h1>
                     <h1 className='text-md'>Explore our extensive collection of premium-quality photos, videos, music, voiceovers, and templates, crafted by talented artists and available for royalty-free use</h1>
@@ -48,7 +48,7 @@ function Discover() {
                         </div>
                     </div>
                 </div>
-                <button className='flex gap-3 items-center justify-center my-10 rounded-full border p-3 w-40  hover:bg-gradient-to-r hover:from-[#4546ED] hover:to-[#272887]  hover:w-52 duration-300'> Explore More <img src={rightArrow} alt="" /></button>
+                <button className='flex gap-3 items-center justify-center my-10 rounded-full border p-3 w-40  hover:bg-gradient-to-r hover:from-[#4546ED] hover:to-[#272887]  hover:w-52 duration-300'> Explore More <img src={rightArrow} alt="" className='animate-pulse '/></button>
             </div>
 
         </div>
