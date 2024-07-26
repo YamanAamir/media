@@ -6,6 +6,8 @@ import Footer from './Components/Footer';
 import './App.css'
 
 import { Navbar } from './Components/Navbar';
+import Register from './Pages/Register';
+import Login from './Pages/Login';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -16,7 +18,7 @@ const ScrollToTop = () => {
 };
 
 function App() {
-  
+
 
   return (
     <div className='bg-[#0b0b0b] p-0'>
@@ -25,6 +27,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/register' element={<Register />} />
+          <Route path='/login' element={<Login />} />
         </Routes>
         <Footer />
       </Router>

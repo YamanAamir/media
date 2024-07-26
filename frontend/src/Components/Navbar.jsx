@@ -59,9 +59,9 @@ export const Navbar = () => {
                 </ul>
                 <div className='hidden lg:flex ml-4 text-white gap-1 items-center'>
                     <FaUserCircle color='white' size={'20px'}/>
-                    <NavLink className='hover:text-blue-500'>Register</NavLink>
+                    <NavLink to="/register" className='hover:text-blue-500'>Register</NavLink>
                     <span>/</span>
-                    <NavLink className='hover:text-blue-500'>Login</NavLink>
+                    <NavLink to="/login" className='hover:text-blue-500'>Login</NavLink>
                 </div>
             </div>
         </nav>
