@@ -5,6 +5,7 @@ import { PopulerSearch } from '../Components/PopulerSearch'
 import Categories from '../Components/Categories'
 import TestimonialsSlider from '../Components/TestimonialsSlider'
 import Discover from '../Components/Discover'
+import BlogsSlider from '../Components/BlogsSlider'
 
 export const Home = () => {
   return (
@@ -14,6 +15,7 @@ export const Home = () => {
       <Discover />
       <PopulerSearch />
       <TestimonialsSlider />
+      <BlogsSlider />
       <Faq />
 
     </div>

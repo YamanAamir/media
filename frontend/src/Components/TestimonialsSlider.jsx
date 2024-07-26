@@ -66,11 +66,11 @@ const TestimonialsSlider = () => {
   }, []);
 
   return (
-    <div className="relative mx-auto my-24 text-white max-w-7xl">
-      <h2 className="text-2xl md:text-5xl text-center md:text-start">What Our Community is Saying?</h2>
-      <p className="text-center md:text-start text-xl my-6">Real feedback from our members. See how we're making an impact together.</p>
+    <div className="relative mx-auto my-24 text-white max-w-screen">
+      <h2 className="text-2xl md:text-3xl text-center md:text-start">What Our Community is Saying?</h2>
+      <p className="text-center md:text-start text-lg my-6">Real feedback from our members. See how we're making an impact together.</p>
       
-      <div className="overflow-hidden">
+      <div className="overflow-hidden mx-auto max-w-7xl">
         <div className="flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
           {testimonials.map((slide, index) => (
             <div key={index} className="flex-shrink-0 flex flex-col md:flex-row md:w-full w-screen">
