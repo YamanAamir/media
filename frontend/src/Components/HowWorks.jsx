@@ -2,7 +2,7 @@ import React from 'react'
 
 export const HowWorks = () => {
     return (
-        <div className='hidden lg:block relative z-10 text-white w-full h-60'>
+        <div className='hidden lg:block py-16 my-10 relative z-10 text-white w-full h-60'>
             <div className='flex justify-center items-center'>
                 <div className='relative'>
                     <div className='w-1 h-[900px] md:w-[900px] md:h-1 bg-[#2424b7]'></div>
