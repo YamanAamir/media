@@ -3,6 +3,7 @@ import { HeroSection } from '../Components/HeroSection'
 import { Faq } from '../Components/Faq'
 import { PopulerSearch } from '../Components/PopulerSearch'
 import Categories from '../Components/Categories'
+import TestimonialsSlider from '../Components/TestimonialsSlider'
 
 export const Home = () => {
   return (
@@ -10,6 +11,7 @@ export const Home = () => {
       <HeroSection />
       <Categories />  
       <PopulerSearch />
+      <TestimonialsSlider />
       <Faq />
 
     </div>
