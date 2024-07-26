@@ -84,38 +84,6 @@ const testimonials = [
     title: 'Best Premerier Pro Slideshow templates',
     img: BlogImg,
   },
-  {
-    title: 'Best Premerier Pro Slideshow templates',
-    img: BlogImg,
-  },
-  {
-    title: 'Best Premerier Pro Slideshow templates',
-    img: BlogImg,
-  },
-  {
-    title: 'Best Premerier Pro Slideshow templates',
-    img: BlogImg,
-  },
-  {
-    title: 'Best Premerier Pro Slideshow templates',
-    img: BlogImg,
-  },
-  {
-    title: 'Best Premerier Pro Slideshow templates',
-    img: BlogImg,
-  },
-  {
-    title: 'Best Premerier Pro Slideshow templates',
-    img: BlogImg,
-  },
-  {
-    title: 'Best Premerier Pro Slideshow templates',
-    img: BlogImg,
-  },
-  {
-    title: 'Best Premerier Pro Slideshow templates',
-    img: BlogImg,
-  },
 ];
 
 const BlogsSlider = () => {
@@ -129,13 +97,7 @@ const BlogsSlider = () => {
     setCurrentSlide((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
   };
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      handleNext();
-    }, 9000);
-
-    return () => clearInterval(interval);
-  }, []);
+ 
 
   return (
     <div className="relative mx-auto my-24 text-white max-w-screen w-full">
