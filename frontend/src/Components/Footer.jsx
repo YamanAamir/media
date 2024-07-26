@@ -19,29 +19,29 @@ function Footer() {
                                 <div className="text-start flex flex-col items-start justify-center   md:w-1/4 w-full">
                                     <h1 className="text-xl font-krona py-4">QUICKLINKS</h1>
                                     <ul className=" gap-4 flex-col md:flex-row">
-                                        <li className=" hover:text-[#227c85] text-sm rounded-xl hover:font-bold duration-300 cursor-pointer py-2"><Link className="" to="/">Home</Link></li>
-                                        <li className=" hover:text-[#227c85] text-sm rounded-xl hover:font-bold duration-300 cursor-pointer py-2"><Link className="" to="/aboutus">Browse</Link></li>
-                                        <li className=" hover:text-[#227c85] text-sm rounded-xl hover:font-bold duration-300 cursor-pointer py-2"><Link className="" to="/blogs">Contributors</Link></li>
-                                        <li className=" hover:text-[#227c85] text-sm rounded-xl hover:font-bold duration-300 cursor-pointer py-2"><Link className="" to="/contactus">Support</Link></li>
-                                        <li className=" hover:text-[#227c85] text-sm rounded-xl hover:font-bold duration-300 cursor-pointer py-2"><Link className="" to="/contactus">Blog</Link></li>
+                                        <li className="  text-sm rounded-xl hover:font-bold duration-300 cursor-pointer py-2"><Link className="" to="/">Home</Link></li>
+                                        <li className="  text-sm rounded-xl hover:font-bold duration-300 cursor-pointer py-2"><Link className="" to="/aboutus">Browse</Link></li>
+                                        <li className="  text-sm rounded-xl hover:font-bold duration-300 cursor-pointer py-2"><Link className="" to="/blogs">Contributors</Link></li>
+                                        <li className="  text-sm rounded-xl hover:font-bold duration-300 cursor-pointer py-2"><Link className="" to="/contactus">Support</Link></li>
+                                        <li className="  text-sm rounded-xl hover:font-bold duration-300 cursor-pointer py-2"><Link className="" to="/contactus">Blog</Link></li>
                                     </ul>
                                 </div>
                                 <div className="text-start  flex flex-col items-start justify-center   md:w-1/4 w-full">
                                     <h1 className="text-xl font-krona py-4">LICENSE</h1>
                                     <ul className=" gap-4 flex-col md:flex-row">
-                                        <li className=" hover:text-[#227c85] text-sm rounded-xl hover:font-bold duration-300 cursor-pointer py-2"><Link to="">Artlist License</Link></li>
-                                        <li className=" hover:text-[#227c85] text-sm rounded-xl hover:font-bold duration-300 cursor-pointer py-2"><Link to="">Terms of Use</Link></li>
-                                        <li className=" hover:text-[#227c85] text-sm rounded-xl hover:font-bold duration-300 cursor-pointer py-2"><Link to="">Copyright Policy</Link></li>
-                                        <li className=" hover:text-[#227c85] text-sm rounded-xl hover:font-bold duration-300 cursor-pointer py-2"><Link to="">Privacy Policy</Link></li>
+                                        <li className="  text-sm rounded-xl hover:font-bold duration-300 cursor-pointer py-2"><Link to="">Artlist License</Link></li>
+                                        <li className="  text-sm rounded-xl hover:font-bold duration-300 cursor-pointer py-2"><Link to="">Terms of Use</Link></li>
+                                        <li className="  text-sm rounded-xl hover:font-bold duration-300 cursor-pointer py-2"><Link to="">Copyright Policy</Link></li>
+                                        <li className="  text-sm rounded-xl hover:font-bold duration-300 cursor-pointer py-2"><Link to="">Privacy Policy</Link></li>
                                     </ul>
                                 </div>
                                 <div className="text-start flex flex-col items-start justify-center  md:w-1/4 w-full">
                                     <h1 className="text-xl font-krona py-4">FOLLOW US</h1>
                                     <ul className=" gap-4 flex-col md:flex-row">
-                                        <li className=" hover:text-[#227c85] text-sm rounded-xl hover:font-bold duration-300 cursor-pointer py-2">Facebook</li>
-                                        <li className=" hover:text-[#227c85] text-sm rounded-xl hover:font-bold duration-300 cursor-pointer py-2">Twitter</li>
-                                        <li className=" hover:text-[#227c85] text-sm rounded-xl hover:font-bold duration-300 cursor-pointer py-2">Instagram</li>
-                                        <li className=" hover:text-[#227c85] text-sm rounded-xl hover:font-bold duration-300 cursor-pointer py-2">LinkedIn</li>
+                                        <li className="  text-sm rounded-xl hover:font-bold duration-300 cursor-pointer py-2">Facebook</li>
+                                        <li className="  text-sm rounded-xl hover:font-bold duration-300 cursor-pointer py-2">Twitter</li>
+                                        <li className="  text-sm rounded-xl hover:font-bold duration-300 cursor-pointer py-2">Instagram</li>
+                                        <li className="  text-sm rounded-xl hover:font-bold duration-300 cursor-pointer py-2">LinkedIn</li>
                                     </ul>
                                 </div>
                                 <div className="text-start flex flex-col items-start justify-center md:w-1/2 w-full">
@@ -49,8 +49,8 @@ function Footer() {
                                     <ul>
                                         <li className=" font-light text-md rounded-xl duration-300 cursor-pointer py-2">For any inquiries or support, please reach out to us at:
                                         </li>
-                                        <li className=" font-light text-md rounded-xl duration-300 cursor-pointer py-2 pl-6 relative"><MdEmail className='absolute hover:text-[#227c85] duration-300 left-0 top-3 text-lg ' /> support@lymecaymedia.com </li>
-                                        <li className=" font-light text-md rounded-xl duration-300 cursor-pointer py-2 pl-6 relative"><FaPhone className='absolute hover:text-[#227c85] duration-300 left-0 top-3 text-lg ' /> +1 (800) 123-4567</li>
+                                        <li className=" font-light text-md rounded-xl duration-300 cursor-pointer py-2 pl-6 relative"><MdEmail className='absolute  duration-300 left-0 top-3 text-lg ' /> support@lymecaymedia.com </li>
+                                        <li className=" font-light text-md rounded-xl duration-300 cursor-pointer py-2 pl-6 relative"><FaPhone className='absolute  duration-300 left-0 top-3 text-lg ' /> +1 (800) 123-4567</li>
                                     </ul>
                                 </div>
 
