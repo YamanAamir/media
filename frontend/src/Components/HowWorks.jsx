@@ -2,8 +2,12 @@ import React from 'react'
 
 export const HowWorks = () => {
     return (
-        <div className='hidden lg:block py-16 my-24 relative z-10 text-white w-full h-60'  data-aos="zoom-out">
+        <div className='my-24'>
+            <h1 className='text-center text-white md:text-4xl text-xl' data-aos="fade-left">How It Works</h1>
+            <p className='text-center text-white text-lg md:text-xl py-4' data-aos="fade-right">Effortlessly Elevate Your Creative Projects</p>
+        <div className='hidden lg:block py-16 relative z-10 text-white w-full h-60'  data-aos="zoom-out">
             <div className='flex justify-center items-center'>
+                
                 <div className='relative'>
                     <div className='w-1 h-[900px] md:w-[900px] md:h-1 bg-[#2424b7]'></div>
                     
@@ -29,6 +33,7 @@ export const HowWorks = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }
