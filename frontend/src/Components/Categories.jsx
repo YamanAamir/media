@@ -50,7 +50,7 @@ function Categories() {
                 {
                     categories.map((category) => (
                         <div>
-                            <div className="rounded-3xl h-[550px]  flex justify-center px-3 items-center" style={
+                            <div className="rounded-3xl h-[500px]  flex justify-center px-3 items-center" style={
                                 {
                                     backgroundImage: `url(${category.img})`,
                                     backgroundSize: 'cover',
@@ -76,42 +76,8 @@ function Categories() {
                         </div>
                     ))
                 }
-                {/* <div class="bg-gray-500 rounded-3xl p-3 h-96">
-                    <div className="" style={
-                        {
-                            backgroundImage: `url(${BgHero})`,
-                            backgroundSize: '1500px',
-                            // backgroundPosition: 'center',
-                            backgroundRepeat: 'no-repeat',
                         }
                     }>
-
-                    </div>
-                </div>
-                <div class="bg-gray-500 rounded-3xl p-3 h-96">
-                    <div className="" style={
-                        {
-                            backgroundImage: `url(${BgHero})`,
-                            backgroundSize: '1500px',
-                            // backgroundPosition: 'center',
-                            backgroundRepeat: 'no-repeat',
-                        }
-                    }>
-
-                    </div>
-                </div>
-                <div class="bg-gray-500 rounded-3xl p-3 h-96">
-                    <div className="" style={
-                        {
-                            backgroundImage: `url(${BgHero})`,
-                            backgroundSize: '1500px',
-                            // backgroundPosition: 'center',
-                            backgroundRepeat: 'no-repeat',
-                        }
-                    }>
-
-                    </div>
-                </div> */}
             </div>
         </div>
     )

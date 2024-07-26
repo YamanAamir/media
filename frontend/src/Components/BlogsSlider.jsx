@@ -138,18 +138,16 @@ const BlogsSlider = () => {
   }, []);
 
   return (
-    <div className="relative mx-auto my-24 text-white max-w-screen w-full">
-      <h2 className="text-2xl md:text-3xl text-center md:text-start">What Our Community is Saying?</h2>
-      <p className="text-center md:text-start text-lg my-6">Real feedback from our members. See how we're making an impact together.</p>
-      
+    <div className="relative mx-auto my-16   text-white max-w-screen w-full">
+      <h2 className="text-2xl md:text-4xl pb-5 text-center md:text-start">Our Latest Blogs</h2>
+
       <div className="overflow-hidden">
         <div className="flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentSlide * (100 / 2)}%)` }}>
           {testimonials.map((slide, index) => (
             <div key={index} className="flex-shrink-0 w-96 p-2 box-border">
               <img src={slide.img} alt="" className="rounded-2xl w-96" />
               <h1 className="text-start p-2 text-xl">{slide.title}</h1>
-              <h3 className="flex text-start p-2 text-sm">Read Blog <img src={Arrow} alt="" className='ml-1'/>
-              </h3>
+              <button className='flex gap-3 text-sm items-center justify-start my-3 w-40 hover:gap-10 duration-300'> Explore More <img src={Arrow} alt="" /></button>
             </div>
           ))}
         </div>

@@ -8,7 +8,7 @@ import vedioIcon from '../assets/discoverAssets/videoIcon.svg'
 import rightArrow from '../assets/discoverAssets/rightArrow.svg'
 function Discover() {
     return (
-        <div className='flex py-20 lg:flex-row flex-col pb-32 gap-32 text-white justify-center lg:items-start items-center'>
+        <div className='flex lg:flex-row flex-col sm:gap-32 text-white justify-center lg:items-start items-center'>
             <div className='relative py-10 sm:w-auto w-2/3'>
                 <img src={bgImg} alt="" />
                 <img className='absolute z-10 sm:w-auto w-1/3 sm:bottom-[-100px] bottom-0 sm:right-[-80px] right-[-30px]' src={frImg} alt="" />

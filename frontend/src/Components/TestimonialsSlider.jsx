@@ -66,7 +66,7 @@ const TestimonialsSlider = () => {
   }, []);
 
   return (
-    <div className="relative mx-auto my-24 text-white max-w-screen">
+    <div className="relative mx-auto mt-16 text-white max-w-screen">
       <h2 className="text-2xl md:text-3xl text-center md:text-start">What Our Community is Saying?</h2>
       <p className="text-center md:text-start text-lg my-6">Real feedback from our members. See how we're making an impact together.</p>
       
