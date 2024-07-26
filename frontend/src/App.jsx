@@ -8,6 +8,7 @@ import './App.css'
 import { Navbar } from './Components/Navbar';
 import Register from './Pages/Register';
 import Login from './Pages/Login';
+import ChatIcon from './Components/ChatIcon';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -30,6 +31,7 @@ function App() {
           <Route path='/register' element={<Register />} />
           <Route path='/login' element={<Login />} />
         </Routes>
+        <ChatIcon />
         <Footer />
       </Router>
     </div>
