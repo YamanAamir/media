@@ -11,7 +11,7 @@ const Sidebar = ({ userType }) => {
   };
 
   return (
-    <div className="flex h-screen pt-24 md:pt-36 text-white">
+    <div className="flex fixed z-0 h-screen pt-24 md:pt-36 text-white">
       <div
         className={`fixed inset-0 bg-gray-800 bg-opacity-75 transition-opacity ${
           isOpen ? 'opacity-100 ' : 'opacity-0 pointer-events-none md:hidden'
@@ -29,20 +29,20 @@ const Sidebar = ({ userType }) => {
             <FaBars size={24} />
           </button>
         </div>
-        <nav className="mt-16 md:mt-24 text-xl space-y-4">
+        <nav className="mt-16 md:mt-24 text-xl font-krona space-y-4">
           {userType === 'admin' && (
             <>
             <a href="#dashboardadmin" className="flex items-center p-2 hover:bg-blue-700">
-            <FaTachometerAlt className="mr-3" /> Dashboard
+            <FaTachometerAlt className="mr-3 text-3xl" /> DASHBOARD
           </a>
               <a href="#uploads" className="flex items-center p-2 hover:bg-blue-700">
-                <FaUpload className="mr-3" /> Uploads
+                <FaUpload className="mr-3 text-3xl" /> UPLOAD MEDIA
               </a>
               <a href="#users" className="flex items-center p-2 hover:bg-blue-700">
-                <FaUsers className="mr-3" /> Users
+                <FaUsers className="mr-3 text-3xl" /> USERS
               </a>
               <a href="#settings" className="flex items-center p-2 hover:bg-blue-700">
-                <FaCog className="mr-3" /> Settings
+                <FaCog className="mr-3 text-3xl" /> SETTINGS
               </a>
             </>
           )}

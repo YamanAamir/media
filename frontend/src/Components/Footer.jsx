@@ -58,9 +58,9 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="flex flex-col md:flex-row p-4 bg-[#1E1E1E] justify-center items-center">
-                <p className='text-gray-400  text-sm'>© 2024 <span className='font-krona text-white'> LYME CAY MEDIA </span> All Rights Reserved.</p>
+                <div className="flex  flex-col md:flex-row p-4 bg-[#1E1E1E] justify-center items-center">
+                    <p className='text-gray-400  text-sm'>© 2024 <span className='font-krona text-white'> LYME CAY MEDIA </span> All Rights Reserved.</p>
+                </div>
             </div>
         </>
     );
