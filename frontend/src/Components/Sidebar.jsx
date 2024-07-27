@@ -80,12 +80,10 @@ const Sidebar = ({ userType }) => {
           )}
         </nav>
       </div>
-      <div className="flex-1 p-4 md:ml-64">
+      <div className="flex-1 p-4">
         <button onClick={toggleSidebar} className="md:hidden">
           <FaBars size={24} />
         </button>
-        <h1 className="text-2xl font-bold">Main Content</h1>
-        <p>Your main content goes here.</p>
       </div>
     </div>
   );
