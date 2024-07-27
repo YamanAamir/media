@@ -32,49 +32,49 @@ const Sidebar = ({ userType }) => {
         <nav className="mt-16 md:mt-24 text-xl font-krona space-y-4">
           {userType === 'admin' && (
             <>
-            <a href="#dashboardadmin" className="flex items-center p-2 hover:bg-blue-700">
+            <a href="#dashboardadmin" className="flex items-center p-2 hover:bg-black duration-300 mx-[0.5px] rounded-lg">
             <FaTachometerAlt className="mr-3 text-3xl" /> DASHBOARD
           </a>
-              <a href="#uploads" className="flex items-center p-2 hover:bg-blue-700">
+              <a href="#uploads" className="flex items-center p-2 hover:bg-black duration-300 mx-[0.5px] rounded-lg">
                 <FaUpload className="mr-3 text-3xl" /> UPLOAD MEDIA
               </a>
-              <a href="#users" className="flex items-center p-2 hover:bg-blue-700">
+              <a href="#users" className="flex items-center p-2 hover:bg-black duration-300 mx-[0.5px] rounded-lg">
                 <FaUsers className="mr-3 text-3xl" /> USERS
               </a>
-              <a href="#settings" className="flex items-center p-2 hover:bg-blue-700">
+              <a href="#settings" className="flex items-center p-2 hover:bg-black duration-300 mx-[0.5px] rounded-lg">
                 <FaCog className="mr-3 text-3xl" /> SETTINGS
               </a>
             </>
           )}
           {userType === 'user' && (
             <>
-            <a href="#dashboarduser" className="flex items-center p-2 hover:bg-blue-700">
-            <FaTachometerAlt className="mr-3" /> Dashboard
+            <a href="#dashboarduser" className="flex items-center p-2 hover:bg-black duration-300 mx-[0.5px] rounded-lg">
+            <FaTachometerAlt className="mr-3 text-3xl" /> DASHBOARD
           </a>
-              <a href="#profile" className="flex items-center p-2 hover:bg-blue-700">
-                <FaUserCircle className="mr-3" /> Profile
+              <a href="#profile" className="flex items-center p-2 hover:bg-black duration-300 mx-[0.5px] rounded-lg">
+                <FaUserCircle className="mr-3 text-3xl" /> PROFILE
               </a>
-              <a href="#cart" className="flex items-center p-2 hover:bg-blue-700">
-                <FaOpencart className="mr-3" /> Cart
+              <a href="#cart" className="flex items-center p-2 hover:bg-black duration-300 mx-[0.5px] rounded-lg">
+                <FaOpencart className="mr-3 text-3xl" /> CART
               </a>
-              <a href="#payment-methods" className="flex items-center p-2 hover:bg-blue-700">
-                <MdOutlinePayment className="mr-3" /> Payment Methods
+              <a href="#payment-methods" className="flex items-center p-2 hover:bg-black duration-300 mx-[0.5px] rounded-lg">
+                <MdOutlinePayment className="mr-3 text-3xl" /> CHECKOUTS
               </a>
             </>
           )}
           {userType === 'contributor' && (
             <>
-            <a href="#dashboardcontri" className="flex items-center p-2 hover:bg-blue-700">
-            <FaTachometerAlt className="mr-3" /> Dashboard
+            <a href="#dashboardcontri" className="flex items-center p-2 hover:bg-black duration-300 mx-[0.5px] rounded-lg">
+            <FaTachometerAlt className="mr-3 text-3xl" /> DASHBOARD
           </a>
-              <a href="#profile" className="flex items-center p-2 hover:bg-blue-700">
-                <FaUserCircle className="mr-3" /> Profile
+              <a href="#profile" className="flex items-center p-2 hover:bg-black duration-300 mx-[0.5px] rounded-lg">
+                <FaUserCircle className="mr-3 text-3xl" /> Profile
               </a>
-              <a href="#uploads" className="flex items-center p-2 hover:bg-blue-700">
-                <FaUpload className="mr-3" /> Uploads
+              <a href="#uploads" className="flex items-center p-2 hover:bg-black duration-300 mx-[0.5px] rounded-lg">
+                <FaUpload className="mr-3 text-3xl" /> UPLOAD MEDIA
               </a>
-              <a href="#payment-methods" className="flex items-center p-2 hover:bg-blue-700">
-                <MdOutlinePayment className="mr-3" /> Payment Methods
+              <a href="#payment-methods" className="flex items-center p-2 hover:bg-black duration-300 mx-[0.5px] rounded-lg">
+                <MdOutlinePayment className="mr-3 text-3xl" /> CHECKOUTS
               </a>
             </>
           )}
