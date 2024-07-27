@@ -30,10 +30,14 @@ function Register() {
                     <li className='border rounded-full p-4 hover:bg-white hover:text-black duration-200'><FaLinkedinIn /></li>
                 </ul>
                 <p>or use your email for registration</p>
-                <form className='w-full flex justify-center flex-col items-center text-black py-3 gap-3'>
-                    <input className='w-4/5 p-2 px-4 rounded-lg' type="text" name='username' placeholder='Username' />
-                    <input className='w-4/5 p-2 px-4 rounded-lg' type="email" name='username' placeholder='Email' />
-                    <input className='w-4/5 p-2 px-4 rounded-lg' type="password" name='username' placeholder='Password' />
+                <form className='w-full flex justify-center flex-col items-center text-white py-3 gap-3'>
+                    <input className='w-4/5 p-2 px-4 rounded-lg text-black' type="text" name='username' placeholder='Username' />
+                    <input className='w-4/5 p-2 px-4 rounded-lg text-black' type="email" name='email' placeholder='Email' />
+                    <input className='w-4/5 p-2 px-4 rounded-lg text-black' type="password" name='password' placeholder='Password' />
+                    <span className='flex justify-start gap-3 items-center'>
+                        <input type="radio" value='User' name='type' className='duration-300' id='user' /> <label htmlFor="user">User</label>
+                        <input type="radio" value='Contributer' name='type' className='duration-300' id='contributer' /> <label htmlFor="contributer">Contributer</label>
+                    </span>
                     <button className='mt-6 rounded-full bg-gradient-to-r from-[#4546ED] to-[#272887] p-3 w-40 font-bold hover:w-52 text-white duration-300'>REGISTER</button>
                 </form>
             </div>
