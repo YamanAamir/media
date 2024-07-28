@@ -23,7 +23,7 @@ const ScrollToTop = () => {
 };
 
 function App() {
-  const [userType, setUserType] = useState('user'); 
+  const [userType, setUserType] = useState('admin'); 
 
   return (
     <div className='bg-[#0b0b0b] p-0 overflow-hidden'>
