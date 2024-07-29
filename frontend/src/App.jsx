@@ -13,6 +13,7 @@ import Sidebar from './Components/Sidebar';
 import AdminDashboard from './Pages/AdminDashboard';
 import UserDashboard from './Pages/UserDashboard';
 import ContributorDashboard from './Pages/ContributorDashboard';
+import { Browse } from './Pages/Browse';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -34,6 +35,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/register' element={<Register />} />
           <Route path='/login' element={<Login />} />
+          <Route path='/browse' element={<Browse />} />
           <Route path='/admin' element={userType === 'admin' ? <AdminDashboard /> : <Navigate to="/" />} />
           <Route path='/user' element={userType === 'user' ? <UserDashboard /> : <Navigate to="/" />} />
           <Route path='/contributor' element={userType === 'contributor' ? <ContributorDashboard /> : <Navigate to="/" />} />
