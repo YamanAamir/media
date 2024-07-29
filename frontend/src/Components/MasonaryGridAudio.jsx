@@ -122,7 +122,7 @@ const MasonryGridAudio = () => {
               src={imageItem.image}
               alt={`Random Unsplash ${index}`}
               className="w-full rounded-lg shadow-md"
-            />
+              data-aos="fade-in"/>
 
             <div
               className="absolute top-4 p-2 right-4 z-10 cursor-pointer bg-gradient-to-r from-[#5354F4] to-[#2C2DE2] rounded-full hover:border hover:bg-none"

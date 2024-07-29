@@ -90,13 +90,13 @@ const  MasonryGridTemplate = () => {
             src={imageItem.image}
             alt={`Random Unsplash ${index}`}
             className="w-full rounded-lg shadow-md"
-          />
+            data-aos="fade-up"/>
           <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
             <img 
               src={imageItem.ownerImage} 
               alt={imageItem.owner}
               className="rounded-full w-20 h-20 shadow-lg border-4 border-gray-300 mb-4"
-            />
+              />
             <p className="text-white text-lg mb-2">{imageItem.owner}</p>
             <p className="text-white text-center text-lg mb-2">{imageItem.description}</p>
             <div className="absolute bottom-4 left-4 right-4 flex justify-between items-center px-2">

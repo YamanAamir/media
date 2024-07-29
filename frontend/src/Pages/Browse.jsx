@@ -30,25 +30,25 @@ export const Browse = () => {
         <button 
           className={`p-2 font-light duration-200 px-7 rounded-full hover:border hover:bg-none ${category === 'images' ? 'bg-gradient-to-r from-[#5354F4] to-[#2C2DE2]' : 'bg-none'}`}
           onClick={() => setCategory('images')}
-        >
+          data-aos="zoom-in">
           Images
         </button>
         <button
           className={`p-2 font-light duration-200 px-7 rounded-full hover:border hover:bg-none ${category === 'videos' ? 'bg-gradient-to-r from-[#5354F4] to-[#2C2DE2]' : 'bg-none'}`}
           onClick={() => setCategory('videos')}
-        >
+          data-aos="zoom-in">
           Videos
         </button>
         <button
           className={`p-2 font-light duration-200 px-7 rounded-full hover:border hover:bg-none ${category === 'audios' ? 'bg-gradient-to-r from-[#5354F4] to-[#2C2DE2]' : 'bg-none'}`}
           onClick={() => setCategory('audios')}
-        >
+          data-aos="zoom-in">
           Audios
         </button>
         <button
           className={`p-2 font-light duration-200 px-7 rounded-full hover:border hover:bg-none ${category === 'templates' ? 'bg-gradient-to-r from-[#5354F4] to-[#2C2DE2]' : 'bg-none'}`}
           onClick={() => setCategory('templates')}
-        >
+          data-aos="zoom-in">
           Templates
         </button>
       </div>

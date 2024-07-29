@@ -25,34 +25,37 @@ export const Contributor = () => {
         <img
           src="https://unsplash-assets.imgix.net/marketing/community/ava01.jpg?bg=fff&crop=faces&dpr=1&h=125&w=125&auto=format&fit=crop&q=60"
           alt=""
-          className="absolute w-16 md:w-20 top-20 left-10 md:top-24 md:left-1/4 rounded-full"
+          className="absolute w-16 md:w-20 top-20 left-10 md:top-24 md:left-1/4 rounded-full animate-pulse "
         />
         <img
           src="https://unsplash-assets.imgix.net/marketing/community/ava02.jpg?bg=fff&crop=faces&dpr=1&h=125&w=125&auto=format&fit=crop&q=60"
           alt=""
-          className="absolute w-20 md:w-24 top-32 left-20 md:top-36 md:left-1/3 rounded-full"
+          className="absolute w-20 md:w-24 top-32 left-20 md:top-36 md:left-1/3 rounded-full animate-pulse "
         />
         <img
           src="https://unsplash-assets.imgix.net/marketing/community/ava06.jpg?bg=fff&crop=faces&dpr=1&h=125&w=125&auto=format&fit=crop&q=60"
           alt=""
-          className="absolute w-24 md:w-28 top-40 left-32 md:top-48 md:left-1/2 rounded-full"
+          className="absolute w-24 md:w-28 top-40 left-32 md:top-48 md:left-1/2 rounded-full animate-pulse "
         />
         <img
           src="https://unsplash-assets.imgix.net/marketing/community/ava03.jpg?bg=fff&crop=faces&dpr=1&h=125&w=125&auto=format&fit=crop&q=60"
           alt=""
-          className="hidden md:block absolute w-20 md:w-24 top-1/2 left-3/4 rounded-full"
+          className="hidden md:block absolute w-20 md:w-24 top-1/2 left-3/4 rounded-full animate-pulse "
         />
         <img
           src="https://unsplash-assets.imgix.net/marketing/community/ava03.jpg?bg=fff&crop=faces&dpr=1&h=125&w=125&auto=format&fit=crop&q=60"
           alt=""
-          className="hidden md:block absolute w-20 md:w-24 top-1/3 left-3/4 rounded-full"
+          className="hidden md:block absolute w-20 md:w-24 top-1/3 left-3/4 rounded-full animate-pulse "
         />
         <div className="flex flex-col justify-center items-center z-10 text-white h-screen relative">
           <div className="w-full flex justify-center">
             <div className="w-full mx-2 md:w-1/2 text-center">
-              <h1 className="text-5xl mb-4">Contribute to LYME CAY MEDIA</h1>
-              <p className="text-2xl mb-6">Unsplash is built by a community of creators who want to share — from amateurs to professionals and everyone in between.</p>
-              <button className="p-2 font-light hover:px-10 duration-200 bg-gradient-to-r from-[#5354F4] to-[#2C2DE2] px-7 py-4 rounded-full hover:border hover:bg-none">
+              <h1 className="text-5xl mb-4" 
+              data-aos="fade-right">Contribute to LYME CAY MEDIA</h1>
+              <p className="text-2xl mb-6" 
+              data-aos="fade-left">Unsplash is built by a community of creators who want to share — from amateurs to professionals and everyone in between.</p>
+              <button className="p-2 font-light hover:px-10 duration-200 bg-gradient-to-r from-[#5354F4] to-[#2C2DE2] px-7 py-4 rounded-full hover:border hover:bg-none" 
+              data-aos="fade-up">
                 Become Contributor
               </button>
             </div>
@@ -60,10 +63,12 @@ export const Contributor = () => {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center text-white py-12">
-        <h1 className="text-5xl mb-4 text-center">Over 340,000 creators contribute to Unsplash.</h1>
+        <h1 className="text-5xl mb-4 text-center" 
+        data-aos="fade-down">Over 340,000 creators contribute to Unsplash.</h1>
         <div className="w-full flex flex-wrap justify-center my-10 gap-8">
           
-            <div className="w-80 h-fit bg-white text-black p-4 rounded-lg shadow-lg">
+            <div className="w-80 h-fit bg-white text-black p-4 rounded-lg shadow-lg" 
+            data-aos="fade-down">
               <div className="flex justify-between items-center py-2 mb-10">
                 <div>
                   <h1 className="text-2xl font-bold">Joshua Earle</h1>
@@ -80,7 +85,8 @@ export const Contributor = () => {
               <p>“Without realizing it, by uploading to Unsplash, I was making real and meaningful connections all over the world. I was helping change the way people interacted with photography and provided resources to those that didn’t have access to any before.”</p>
             </div>
           
-            <div className="w-80 h-fit md:mt-12 bg-white text-black p-4 rounded-lg shadow-lg">
+            <div className="w-80 h-fit md:mt-12 bg-white text-black p-4 rounded-lg shadow-lg" 
+            data-aos="fade-up">
               <div className="flex justify-between items-center py-2 mb-10">
                 <div>
                   <h1 className="text-2xl font-bold">Joshua Earle</h1>
@@ -97,7 +103,8 @@ export const Contributor = () => {
               <p>“Without realizing it, by uploading to Unsplash, I was making real and meaningful connections all over the world. I was helping change the way people interacted with photography and provided resources to those that didn’t have access to any before.”</p>
             </div>
 
-            <div className="w-80 h-fit bg-white text-black p-4 rounded-lg shadow-lg">
+            <div className="w-80 h-fit bg-white text-black p-4 rounded-lg shadow-lg" 
+            data-aos="fade-down">  
               <div className="flex justify-between items-center py-2 mb-10">
                 <div>
                   <h1 className="text-2xl font-bold">Joshua Earle</h1>
@@ -114,7 +121,8 @@ export const Contributor = () => {
               <p>“Without realizing it, by uploading to Unsplash, I was making real and meaningful connections all over the world. I was helping change the way people interacted with photography and provided resources to those that didn’t have access to any before.”</p>
             </div>
 
-            <div className="w-80 h-fit md:mt-12 bg-white text-black p-4 rounded-lg shadow-lg">
+            <div className="w-80 h-fit md:mt-12 bg-white text-black p-4 rounded-lg shadow-lg" 
+            data-aos="fade-up">
               <div className="flex justify-between items-center py-2 mb-10">
                 <div>
                   <h1 className="text-2xl font-bold">Joshua Earle</h1>

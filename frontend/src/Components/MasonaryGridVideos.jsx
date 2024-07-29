@@ -118,7 +118,7 @@ const MasonryGridVideos = () => {
               src={imageItem.image}
               alt={`Random Unsplash ${index}`}
               className="w-full rounded-lg shadow-md"
-            />
+              data-aos="fade-in"/>
           )}
           <div 
               className="absolute top-4 p-2 right-4 z-10 cursor-pointer bg-gradient-to-r from-[#5354F4] to-[#2C2DE2] rounded-full hover:border hover:bg-none"
@@ -134,7 +134,7 @@ const MasonryGridVideos = () => {
                   src={imageItem.ownerImage} 
                   alt={imageItem.owner}
                   className="rounded-full w-20 h-20 shadow-lg border-4 border-gray-300 mb-4"
-                />
+                  />
                 <p className="text-white text-lg mb-2">{imageItem.owner}</p>
                 <p className="text-white text-center text-lg mb-2">{imageItem.description}</p>
                 <div className="absolute bottom-4 left-4 right-4 flex justify-between items-center px-2">
