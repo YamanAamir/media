@@ -38,13 +38,16 @@ export const Navbar = () => {
                             <NavLink to='/pricing' onClick={toggleMenu}>PRICING</NavLink>
                         </li>
                         <li className='block p-2 hover:text-blue-700 text-lg duration-300 cursor-pointer'>
-                            <NavLink to='/contributors' onClick={toggleMenu}>CONTRIBUTORS</NavLink>
+                            <NavLink to='/contributor' onClick={toggleMenu}>CONTRIBUTORS</NavLink>
                         </li>
                         <li className='block p-2 hover:text-blue-700 text-lg duration-300 cursor-pointer'>
                             <NavLink to='/support' onClick={toggleMenu}>SUPPORT</NavLink>
                         </li>
                         <li className='block p-2 hover:text-blue-700 text-lg duration-300 cursor-pointer'>
                             <NavLink to='/blogs' onClick={toggleMenu}>BLOGS</NavLink>
+                        </li>
+                        <li className='block p-2 hover:text-blue-700 text-lg duration-300 cursor-pointer'>
+                            <NavLink to='/register' onClick={toggleMenu}>REGISTER</NavLink>
                         </li>
                     </ul>
                 </div>
@@ -53,7 +56,7 @@ export const Navbar = () => {
                     <NavLink to='/' className={({ isActive }) => `font-sans ${isActive ? 'text-blue-800' : 'text-white'} hover:text-blue-500 text-sm font-krona duration-300 cursor-pointer`}>HOME</NavLink>
                     <NavLink to='/browse' className={({ isActive }) => `font-sans ${isActive ? 'text-blue-800' : 'text-white'} hover:text-blue-500 text-sm font-krona duration-300 cursor-pointer`}>BROWSE</NavLink>
                     <NavLink to='/pricing' className={({ isActive }) => `font-sans ${isActive ? 'text-blue-800' : 'text-white'} hover:text-blue-500 text-sm font-krona duration-300 cursor-pointer`}>PRICING</NavLink>
-                    <NavLink to='/contributors' className={({ isActive }) => `font-sans ${isActive ? 'text-blue-800' : 'text-white'} hover:text-blue-500 text-sm font-krona duration-300 cursor-pointer`}>CONTRIBUTORS</NavLink>
+                    <NavLink to='/contributor' className={({ isActive }) => `font-sans ${isActive ? 'text-blue-800' : 'text-white'} hover:text-blue-500 text-sm font-krona duration-300 cursor-pointer`}>CONTRIBUTORS</NavLink>
                     <NavLink to='/support' className={({ isActive }) => `font-sans ${isActive ? 'text-blue-800' : 'text-white'} hover:text-blue-500 text-sm font-krona duration-300 cursor-pointer`}>SUPPORT</NavLink>
                     <NavLink to='/blogs' className={({ isActive }) => `font-sans ${isActive ? 'text-blue-800' : 'text-white'} hover:text-blue-500 text-sm font-krona duration-300 cursor-pointer`}>BLOGS</NavLink>
                 </ul>

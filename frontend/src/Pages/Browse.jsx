@@ -8,6 +8,9 @@ import AOS from "aos";
 import 'aos/dist/aos.css';
 import MasonryGridTemplate from '../Components/MasonaryGridTemplate';
 
+import Ellipse1 from '../assets/Ellipse-1.svg'
+import Ellipse2 from '../assets/Ellipse-2.svg'
+import Ellipse3 from '../assets/Ellipse-3.svg'
 
 export const Browse = () => {
   const [category, setCategory] = useState('images');
@@ -18,6 +21,10 @@ export const Browse = () => {
 
   return (
     <div className="min-h-screen xl:px-32 lg:px-24">
+        <img src={Ellipse1} alt=""  className='absolute left-0 rotate-180 ' />
+        <img src={Ellipse3} alt=""  className='absolute right-0  top-0' />
+
+        
       <HeroSection />
       <div className='flex justify-center flex-wrap md:w-full text-white gap-2 my-12'>
         <button 
@@ -46,6 +53,8 @@ export const Browse = () => {
         </button>
       </div>
 
+      <img src={Ellipse3} alt=""  className='absolute left-0 rotate-180 ' />
+      <img src={Ellipse1} alt=""  className='absolute right-0 ' />
       {category === 'images' && <MasonryGridImages />}
       {category === 'videos' && <MasonryGridVideos />}
       {category === 'audios' && <MasonryGridAudio />}

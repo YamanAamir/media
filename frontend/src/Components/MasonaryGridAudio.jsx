@@ -143,7 +143,7 @@ const MasonryGridAudio = () => {
               <p className="text-white text-lg mb-2">{imageItem.owner}</p>
               <p className="text-white text-center text-lg mb-2">{imageItem.description}</p>
               <div className="absolute bottom-4 left-4 right-4 flex justify-between items-center px-2">
-                <p className="text-white text-lg">Price: ${imageItem.price}</p>
+                <p className="text-white font-bold text-lg">Price: ${imageItem.price}</p>
                 <div className="p-2 cursor-pointer bg-gradient-to-r from-[#5354F4] to-[#2C2DE2] rounded-full hover:border hover:bg-none">
                   <FaOpencart className="text-white text-2xl" />
                 </div>
