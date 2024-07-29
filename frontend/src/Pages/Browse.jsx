@@ -19,8 +19,8 @@ export const Browse = () => {
   return (
     <div className="min-h-screen xl:px-32 lg:px-24">
       <HeroSection />
-      <div className='flex justify-center w-full text-white gap-2 mb-12'>
-        <button
+      <div className='flex justify-center flex-wrap md:w-full text-white gap-2 my-12'>
+        <button 
           className={`p-2 font-light duration-200 px-7 rounded-full hover:border hover:bg-none ${category === 'images' ? 'bg-gradient-to-r from-[#5354F4] to-[#2C2DE2]' : 'bg-none'}`}
           onClick={() => setCategory('images')}
         >

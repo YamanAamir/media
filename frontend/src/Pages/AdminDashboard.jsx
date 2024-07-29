@@ -62,7 +62,7 @@ const AdminDashboard = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row gap-1">
+        <div className="max-w-full flex flex-col md:flex-row gap-1">
           <div className="w-full md:w-1/2 ">
             <LineGraph data={monthlyEarnings} labels={months} />
           </div>
