@@ -14,6 +14,7 @@ import AdminDashboard from './Pages/AdminDashboard';
 import UserDashboard from './Pages/UserDashboard';
 import ContributorDashboard from './Pages/ContributorDashboard';
 import { Browse } from './Pages/Browse';
+import Pricing from './Pages/Pricing';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -24,7 +25,7 @@ const ScrollToTop = () => {
 };
 
 function App() {
-  const [userType, setUserType] = useState('admin'); 
+  const [userType, setUserType] = useState('admin');
 
   return (
     <div className='bg-[#0b0b0b] p-0 overflow-hidden'>
@@ -36,6 +37,7 @@ function App() {
           <Route path='/register' element={<Register />} />
           <Route path='/login' element={<Login />} />
           <Route path='/browse' element={<Browse />} />
+          <Route path='/pricing' element={<Pricing />} />
           <Route path='/admin' element={userType === 'admin' ? <AdminDashboard /> : <Navigate to="/" />} />
           <Route path='/user' element={userType === 'user' ? <UserDashboard /> : <Navigate to="/" />} />
           <Route path='/contributor' element={userType === 'contributor' ? <ContributorDashboard /> : <Navigate to="/" />} />
