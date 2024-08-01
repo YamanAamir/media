@@ -19,6 +19,8 @@ import { Contributor } from './Pages/Contributor';
 import { Blogs } from './Pages/Blogs';
 import BlogDetail from './Components/BlogDetail';
 import { Support } from './Pages/Support';
+import ImageForm from './Components/ImageForm';
+import UploadMedia from './Components/UploadMedia';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -46,7 +48,8 @@ function App() {
           <Route path='/support' element={<Support />} />
           <Route path="/blogs/:id" element={<BlogDetail />} />
           <Route path='/blogs' element={<Blogs />} />
-          <Route path='/admin' element={userType === 'admin' ? <AdminDashboard /> : <Navigate to="/" />} />
+          <Route path='/admin' element={userType === 'admin' ? <UploadMedia  /> : <Navigate to="/" />} />
+          <Route path='/dashboard' element={userType === 'admin' ? <AdminDashboard /> : <Navigate to="/" />} />
           <Route path='/user' element={userType === 'user' ? <UserDashboard /> : <Navigate to="/" />} />
           <Route path='/contributor' element={userType === 'contributor' ? <ContributorDashboard /> : <Navigate to="/" />} />
         </Routes>

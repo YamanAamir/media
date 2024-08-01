@@ -3,6 +3,7 @@ import React from "react";
 import DashboardLayout from "../DashboardLayout/DashboardLayout";
 import LineGraph from "../Components/LineGraph";
 import PieChart from "../Components/PieChart";
+import ImageForm from "../Components/ImageForm";
 
 const AdminDashboard = () => {
   const monthlyEarnings = [
@@ -22,15 +23,15 @@ const AdminDashboard = () => {
     "Nov",
     "Dec",
   ];
-  const categoryData = [300, 500, 100, 200]; 
+  const categoryData = [300, 500, 100, 200];
   const categories = ["Videos", "Images", "Audios", "Templates"];
 
   return (
     <DashboardLayout userType="admin">
       <div className="w-full">
-        <div className=" flex lg:flex-row flex-col items-center justify-center w-full gap-5 pt-24 pb-4">
+        <div className=" flex lg:flex-row flex-col items-center justify-center gap-5 pt-24 pb-4">
           <div className="lg:w-1/2 w-full flex flex-col gap-3">
-            <div className="w-full  text-white text-center py-12 rounded-2xl bg-gradient-to-r from-[#4546ED] to-[#272887]">
+            <div className="  text-white text-center py-12 rounded-2xl bg-gradient-to-r from-[#4546ED] to-[#272887]">
               <h1 className="text-5xl">20000</h1>
               <h2 className="text-2xl">Total Users</h2>
             </div>
@@ -62,7 +63,7 @@ const AdminDashboard = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-full flex flex-col md:flex-row gap-1">
+        <div className="flex flex-col md:flex-row gap-1">
           <div className="w-full md:w-1/2 ">
             <LineGraph data={monthlyEarnings} labels={months} />
           </div>
