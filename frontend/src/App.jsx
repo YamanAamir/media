@@ -21,6 +21,7 @@ import BlogDetail from './Components/BlogDetail';
 import { Support } from './Pages/Support';
 import ImageForm from './Components/ImageForm';
 import UploadMedia from './Components/UploadMedia';
+import ContributorRegister from './Pages/ContributorRegister';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -48,10 +49,11 @@ function App() {
           <Route path='/support' element={<Support />} />
           <Route path="/blogs/:id" element={<BlogDetail />} />
           <Route path='/blogs' element={<Blogs />} />
-          <Route path='/admin' element={userType === 'admin' ? <UploadMedia  /> : <Navigate to="/" />} />
-          <Route path='/dashboard' element={userType === 'admin' ? <AdminDashboard /> : <Navigate to="/" />} />
+          <Route path='/contributor-register' element={<ContributorRegister />} />
+          <Route path='/admin' element={userType === 'admin' ? <AdminDashboard /> : <Navigate to="/" />} />
+          <Route path='//admin/uploads' element={<UploadMedia/>} />
           <Route path='/user' element={userType === 'user' ? <UserDashboard /> : <Navigate to="/" />} />
-          <Route path='/contributor' element={userType === 'contributor' ? <ContributorDashboard /> : <Navigate to="/" />} />
+          <Route path='/contributors' element={userType === 'contributors' ? <ContributorDashboard /> : <Navigate to="/" />} />
         </Routes>
         <ChatIcon />
         <Footer />

@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 
 
-function Register() {
+function ContributorRegister() {
     useEffect(() => {
         AOS.init({ duration: "500", delay: "0" });
     });
@@ -23,7 +23,7 @@ function Register() {
             </div>
             <div
                 data-aos="fade-right" className="h-[600px] md:w-1/2 w-full flex md:py-24 py-8 flex-col items-center justify-center border-4 border-[#272887] md:rounded-r-3xl">
-                <h1 className='text-4xl font-krona text-center' >Create Account</h1>
+                <h1 className='text-4xl font-krona text-center' >Create Contributor <br /> Account</h1>
                 <ul className='flex gap-5 py-5'>
                     <li className='border rounded-full p-4 hover:bg-white hover:text-black duration-200'><FaFacebookF /></li>
                     <li className='border rounded-full p-4 hover:bg-white hover:text-black duration-200'><FaGoogle /></li>
@@ -45,4 +45,4 @@ function Register() {
     )
 }
 
-export default Register
+export default ContributorRegister

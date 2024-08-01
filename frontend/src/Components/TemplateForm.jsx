@@ -23,7 +23,7 @@ function TemplateForm() {
     };
 
     return (
-        <div className="py-4 w-4/5 lg:mx-24 mx-8 flex flex-col items-center justify-center">
+        <div className="py-4 w-11/12 lg:mx-24 mx-8 flex flex-col items-center justify-center">
             <form className="w-full mx-auto p-4 bg-gradient-to-r from-[#4546ED] to-[#272887] shadow-md rounded-xl" onSubmit={handleSubmit}>
                 <div className="mb-8">
                     <label className="block text-white text-lg font-krona mb-2" htmlFor="image">

@@ -26,7 +26,7 @@ const ContributorDashboard = () => {
   const categories = ["Videos", "Images", "Audios", "Templates"];
 
   return (
-    <DashboardLayout userType="contributor">
+    <DashboardLayout userType="contributors">
       <div className="w-full">
         <div className=" flex lg:flex-row flex-col items-center justify-center w-full gap-5 pt-24 pb-4">
           <div className="lg:w-1/2 w-full flex flex-col gap-3">

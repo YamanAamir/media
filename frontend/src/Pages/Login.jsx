@@ -159,7 +159,8 @@ function Login() {
             >
                 <h1 className='text-4xl text-center font-krona'>HELLO FRIENDS!</h1>
                 <h1 className=' text-center pt-5'>Enter your personal details and start journey with us</h1>
-                <Link to='/register' className='md:my-16 mt-4 rounded-full flex justify-center  p-3 w-40  bg-white font-bold hover:w-52 text-[#272887] duration-300'>REGISTER</Link>
+                <Link to='/register' className='md:mt-16 mt-4 rounded-full flex justify-center p-2 px-4 w-58  bg-white font-bold hover:px-10 text-[#272887] duration-300'>REGISTER AS USER</Link>
+                <Link to='/contributor-register' className='md:mb-16 mt-4 rounded-full flex justify-center p-2 px-4 w-58  bg-white font-bold hover:px-10 text-[#272887] duration-500'>REGISTER AS CONTRIBUTOR</Link>
             </div>
         </div>
     );

@@ -19,7 +19,7 @@ const Sidebar = ({ userType }) => {
         onClick={toggleSidebar}
       ></div>
       <div
-        className={`fixed inset-y-0 left-0 bg-gradient-to-r from-[4546ED] to-[272887] text-white w-64 transform transition-transform ${isOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'
+        className={`fixed inset-y-0 left-0 bg-gradient-to-r from-[#4546ED] to-[#272887] text-white w-64 transform transition-transform ${isOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'
           }`}
       >
         <div className="p-4 flex items-center justify-between">
@@ -31,7 +31,7 @@ const Sidebar = ({ userType }) => {
         <nav className="mt-16 md:mt-24 text-xl font-krona space-y-4">
           {userType === 'admin' && (
             <>
-              <Link to="/dashboard" className="flex items-center p-2 hover:bg-black duration-300 mx-[0.5px] rounded-lg">
+              <Link to="/admin" className="flex items-center p-2 hover:bg-black duration-300 mx-[0.5px] rounded-lg">
                 <FaTachometerAlt className="mr-3 text-3xl" /> DASHBOARD
               </Link>
               <Link to="/admin/uploads" className="flex items-center p-2 hover:bg-black duration-300 mx-[0.5px] rounded-lg">
@@ -61,18 +61,18 @@ const Sidebar = ({ userType }) => {
               </Link>
             </>
           )}
-          {userType === 'contributor' && (
+          {userType === 'contributors' && (
             <>
-              <Link to="dashboard" className="flex items-center p-2 hover:bg-black duration-300 mx-[0.5px] rounded-lg">
+              <Link to="/dashboard" className="flex items-center p-2 hover:bg-black duration-300 mx-[0.5px] rounded-lg">
                 <FaTachometerAlt className="mr-3 text-3xl" /> DASHBOARD
               </Link>
-              <Link to="profile" className="flex items-center p-2 hover:bg-black duration-300 mx-[0.5px] rounded-lg">
+              <Link to="/profile" className="flex items-center p-2 hover:bg-black duration-300 mx-[0.5px] rounded-lg">
                 <FaUserCircle className="mr-3 text-3xl" /> Profile
               </Link>
-              <Link to="uploads" className="flex items-center p-2 hover:bg-black duration-300 mx-[0.5px] rounded-lg">
+              <Link to="/uploads" className="flex items-center p-2 hover:bg-black duration-300 mx-[0.5px] rounded-lg">
                 <FaUpload className="mr-3 text-3xl" /> UPLOAD MEDIA
               </Link>
-              <Link to="payment-methods" className="flex items-center p-2 hover:bg-black duration-300 mx-[0.5px] rounded-lg">
+              <Link to="/payment-methods" className="flex items-center p-2 hover:bg-black duration-300 mx-[0.5px] rounded-lg">
                 <MdOutlinePayment className="mr-3 text-3xl" /> CHECKOUTS
               </Link>
             </>

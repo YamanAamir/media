@@ -8,6 +8,7 @@ import Ellipse3 from "../assets/Ellipse-3.svg";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 export const Contributor = () => {
   useEffect(() => {
@@ -54,12 +55,12 @@ export const Contributor = () => {
                 Unsplash is built by a community of creators who want to share —
                 from amateurs to professionals and everyone in between.
               </p>
-              <button
+              <Link to="/contributor-register"
                 className="p-2 font-light hover:px-10 duration-200 bg-gradient-to-r from-[#5354F4] to-[#2C2DE2] px-7 py-4 rounded-full hover:border hover:bg-none"
                 data-aos="fade-up"
               >
                 Become Contributor
-              </button>
+              </Link>
             </div>
           </div>
         </div>

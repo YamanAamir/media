@@ -3,7 +3,6 @@ import React from "react";
 import DashboardLayout from "../DashboardLayout/DashboardLayout";
 import LineGraph from "../Components/LineGraph";
 import PieChart from "../Components/PieChart";
-import ImageForm from "../Components/ImageForm";
 
 const AdminDashboard = () => {
   const monthlyEarnings = [
