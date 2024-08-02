@@ -1,6 +1,6 @@
 // src/Pages/UserDashboard.js
 import React from 'react';
-import DashboardLayout from '../DashboardLayout/DashboardLayout';
+import DashboardLayout from '../DashboardLayout/ContributorDashboardLayout';
 
 const UserDashboard = () => {
   return (

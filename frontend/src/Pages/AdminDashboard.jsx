@@ -1,6 +1,6 @@
 // src/Pages/AdminDashboard.js
 import React from "react";
-import DashboardLayout from "../DashboardLayout/DashboardLayout";
+import DashboardLayout from "../DashboardLayout/ContributorDashboardLayout";
 import LineGraph from "../Components/LineGraph";
 import PieChart from "../Components/PieChart";
 

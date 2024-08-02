@@ -1,65 +1,73 @@
-import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from 'react-router-dom';
-
+import React, { useState } from 'react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Home } from './Pages/Home';
-import Footer from './Components/Footer';
-import './App.css'
-
-import { Navbar } from './Components/Navbar';
-import Register from './Pages/Register';
-import Login from './Pages/Login';
-import ChatIcon from './Components/ChatIcon';
-import Sidebar from './Components/Sidebar';
-import AdminDashboard from './Pages/AdminDashboard';
-import UserDashboard from './Pages/UserDashboard';
-import ContributorDashboard from './Pages/ContributorDashboard';
 import { Browse } from './Pages/Browse';
-import Pricing from './Pages/Pricing';
 import { Contributor } from './Pages/Contributor';
+import Pricing from './Pages/Pricing';
+import { Support } from './Pages/Support';
 import { Blogs } from './Pages/Blogs';
 import BlogDetail from './Components/BlogDetail';
-import { Support } from './Pages/Support';
-import ImageForm from './Components/ImageForm';
+import WebsiteLayout from './DashboardLayout/WebsiteLayout';
+import ContributorDashboardLayout from './DashboardLayout/ContributorDashboardLayout';
+import ContributorDashboard from './Pages/ContributorDashboard';
 import UploadMedia from './Components/UploadMedia';
-import ContributorRegister from './Pages/ContributorRegister';
+import ProtectedRoute from './Components/ProtectedRoute';
 
-const ScrollToTop = () => {
-  const { pathname } = useLocation();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-  return null;
-};
 
-function App() {
-  const [userType, setUserType] = useState('admin');
+
+export default function App() {
+  const [userType, setUserType] = useState('contributors');
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <WebsiteLayout />,
+      children: [
+        {
+          path: '/',
+          element: <Home />
+        },
+        {
+          path: 'browse',
+          element: <Browse />
+        },
+        {
+          path: 'contributor',
+          element: <Contributor />
+        },
+        {
+          path: 'pricing',
+          element: <Pricing />
+        },
+        {
+          path: 'support',
+          element: <Support />
+        },
+        {
+          path: 'blogs',
+          element: <Blogs />,
+          children: [
+            {
+              path: ':id',
+              element: <BlogDetail />
+            }
+          ]
+        },
+      ]
+    },
+    {
+      path: '/contributors',
+      element: <ContributorDashboardLayout userType={userType} />, // Pass userType to layout
+      children: [
+        { path: '', element: <ContributorDashboard /> },
+        { path: 'uploads', element: <UploadMedia /> }
+      ]
+    }
+  ]);
 
   return (
     <div className='bg-[#0b0b0b] p-0 overflow-hidden'>
-      <Router>
-        <ScrollToTop />
-        <Navbar />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/register' element={<Register />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/browse' element={<Browse />} />
-          <Route path='/pricing' element={<Pricing />} />
-          <Route path='/contributor' element={<Contributor />} />
-          <Route path='/support' element={<Support />} />
-          <Route path="/blogs/:id" element={<BlogDetail />} />
-          <Route path='/blogs' element={<Blogs />} />
-          <Route path='/contributor-register' element={<ContributorRegister />} />
-          <Route path='/admin' element={userType === 'admin' ? <AdminDashboard /> : <Navigate to="/" />} />
-          <Route path='//admin/uploads' element={<UploadMedia/>} />
-          <Route path='/user' element={userType === 'user' ? <UserDashboard /> : <Navigate to="/" />} />
-          <Route path='/contributors' element={userType === 'contributors' ? <ContributorDashboard /> : <Navigate to="/" />} />
-        </Routes>
-        <ChatIcon />
-        <Footer />
-      </Router>
+      <RouterProvider router={router} />
     </div>
-  )
+  );
 }
-
-export default App;
