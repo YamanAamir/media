@@ -16,6 +16,14 @@ import ProtectedRoute from './Components/ProtectedRoute';
 
 
 export default function App() {
+  
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+};
   const [userType, setUserType] = useState('contributors');
 
   const router = createBrowserRouter([

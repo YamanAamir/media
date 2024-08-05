@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaTachometerAlt, FaUpload, FaUsers, FaCog, FaBars, FaUserCircle, FaOpencart } from 'react-icons/fa';
+import { FaTachometerAlt, FaUpload, FaUsers, FaCog, FaBars, FaUserCircle, FaOpencart, FaTimes } from 'react-icons/fa';
 import { MdOutlinePayment } from "react-icons/md";
 import { Link } from 'react-router-dom';
 
@@ -20,13 +20,10 @@ const Sidebar = ({ userType }) => {
 
       {/* Sidebar */}
       <div
-        className={`fixed inset-y-0 left-0 bg-gradient-to-r from-[#4546ED] to-[#272887] text-white w-64 transform transition-transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} xl:translate-x-0 h-full`}
+        className={`fixed inset-y-0 left-0 bg-[#1C1C24] text-white w-64 transform transition-transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} xl:translate-x-0 h-full`}
       >
-        <div className="p-4 flex items-center justify-between">
-          <h2 className="text-xl font-bold">Sidebar</h2>
-          <button onClick={toggleSidebar} className="xl:hidden">
-            <FaBars size={24} />
-          </button>
+        <div className="p-4 mt-12 flex items-center justify-between">
+          <h2 className="text-lg font-bold font-krona">Lyme Cay Media</h2>  
         </div>
         <nav className="mt-16 text-xl font-krona space-y-4">
           {userType === 'admin' && (
@@ -85,10 +82,11 @@ const Sidebar = ({ userType }) => {
         onClick={toggleSidebar}
         className="xl:hidden fixed top-4 left-4 z-10 text-white"
       >
-        <FaBars size={24} />
+        {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
       </button>
     </div>
   );
 };
 
 export default Sidebar;
+
