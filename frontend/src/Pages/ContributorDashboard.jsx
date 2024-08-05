@@ -12,8 +12,8 @@ const ContributorDashboard = () => {
   const categories = ["Videos", "Images", "Audios", "Templates"];
 
   return (
-    <div className="w-full p-4 lg:p-8">
-      <div className="flex flex-col lg:flex-row items-center justify-center w-full gap-5 pt-12 lg:pt-24 pb-4">
+    <div className="w-full pt-16 px-3">
+      <div className="flex lg:flex-row flex-col items-center justify-center w-full gap-5  pb-4">
         <div className="lg:w-1/2 w-full flex flex-col gap-3">
           <div className="w-full text-white text-center py-8 lg:py-12 rounded-2xl bg-gradient-to-r from-[#4546ED] to-[#272887]">
             <h1 className="text-4xl lg:text-5xl">$ 20000</h1>

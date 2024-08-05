@@ -28,7 +28,7 @@ const AdminDashboard = () => {
   return (
     <DashboardLayout userType="admin">
       <div className="w-full">
-        <div className=" flex lg:flex-row flex-col items-center justify-center gap-5 pt-24 pb-4">
+        <div className=" flex lg:flex-row flex-col items-center justify-center gap-5">
           <div className="lg:w-1/2 w-full flex flex-col gap-3">
             <div className="  text-white text-center py-12 rounded-2xl bg-gradient-to-r from-[#4546ED] to-[#272887]">
               <h1 className="text-5xl">20000</h1>

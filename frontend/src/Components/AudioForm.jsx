@@ -1,31 +1,30 @@
 import React, { useState } from 'react';
 
-function AudioForm() {
+const MyForm = () => {
     const [formData, setFormData] = useState({
         title: '',
         description: '',
-        image: null,
-        avatar: null,
-        metaTags: ''
+        metaTags: '',
+        pricing: 'free',
+        price: '',
     });
 
     const handleChange = (e) => {
-        const { name, value, files } = e.target;
-        setFormData({
-            ...formData,
-            [name]: files ? files[0] : value
-        });
+        const { name, value } = e.target;
+        setFormData((prevData) => ({ ...prevData, [name]: value }));
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(formData);
-        // Add form submission logic here
+        // Handle form submission
     };
 
     return (
         <div className="py-4 w-11/12 lg:mx-24 mx-8 flex flex-col items-center justify-center">
-            <form className="w-full mx-auto p-4 bg-gradient-to-r from-[#4546ED] to-[#272887] shadow-md rounded-xl" onSubmit={handleSubmit}>
+            <form
+                className="w-full mx-auto p-4 bg-gradient-to-r from-[#4546ED] to-[#272887] shadow-md rounded-xl"
+                onSubmit={handleSubmit}
+            >
                 <div className="mb-8">
                     <label className="block text-white text-lg font-krona mb-2" htmlFor="image">
                         Audio
@@ -51,6 +50,7 @@ function AudioForm() {
                         className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
                     />
                 </div>
+
                 <div className="mb-8">
                     <label className="block text-white text-lg font-krona mb-2" htmlFor="title">
                         Title
@@ -64,6 +64,7 @@ function AudioForm() {
                         className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
                     />
                 </div>
+
                 <div className="mb-8">
                     <label className="block text-white text-lg font-krona mb-2" htmlFor="description">
                         Description
@@ -90,6 +91,53 @@ function AudioForm() {
                         className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
                     />
                 </div>
+
+                <div className="mb-8">
+                    <label className="block text-white text-lg font-krona mb-2" htmlFor="pricing">
+                        Pricing
+                    </label>
+                    <div className="flex items-center space-x-4">
+                        <label className="text-white">
+                            <input
+                                type="radio"
+                                name="pricing"
+                                value="free"
+                                checked={formData.pricing === 'free'}
+                                onChange={handleChange}
+                                className="mr-2"
+                            />
+                            Free
+                        </label>
+                        <label className="text-white">
+                            <input
+                                type="radio"
+                                name="pricing"
+                                value="paid"
+                                checked={formData.pricing === 'paid'}
+                                onChange={handleChange}
+                                className="mr-2"
+                            />
+                            Paid
+                        </label>
+                    </div>
+                </div>
+
+                {formData.pricing === 'paid' && (
+                    <div className="mb-8">
+                        <label className="block text-white text-lg font-krona mb-2" htmlFor="price">
+                            Price
+                        </label>
+                        <input
+                            type="number"
+                            name="price"
+                            id="price"
+                            value={formData.price}
+                            onChange={handleChange}
+                            className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
+                        />
+                    </div>
+                )}
+
                 <div className="flex items-center justify-between">
                     <button
                         type="submit"
@@ -101,7 +149,6 @@ function AudioForm() {
             </form>
         </div>
     );
-}
+};
 
-export default AudioForm;
-
+export default MyForm;

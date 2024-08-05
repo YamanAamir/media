@@ -12,6 +12,7 @@ import ContributorDashboardLayout from './DashboardLayout/ContributorDashboardLa
 import ContributorDashboard from './Pages/ContributorDashboard';
 import UploadMedia from './Components/UploadMedia';
 import ProtectedRoute from './Components/ProtectedRoute';
+import ContributorProfile from './Components/ContributorProfile';
 
 
 
@@ -68,7 +69,8 @@ const ScrollToTop = () => {
       element: <ContributorDashboardLayout userType={userType} />, // Pass userType to layout
       children: [
         { path: '', element: <ContributorDashboard /> },
-        { path: 'uploads', element: <UploadMedia /> }
+        { path: 'profile', element: <ContributorProfile /> },
+        { path: 'uploads', element: <UploadMedia /> },
       ]
     }
   ]);

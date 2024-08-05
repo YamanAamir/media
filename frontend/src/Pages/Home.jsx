@@ -37,7 +37,7 @@ export const Home = () => {
       <HowWorks />
       <Courses />
       <PopulerSearch />
-      <img src={Ellipse3} alt=""  className='absolute right-0  ' />
+      <img src={Ellipse3} alt=""  className='absolute right-0  ' />  
       <img src={Ellipse1} alt=""  className='absolute left-0 rotate-180' />
 
       <TestimonialsSlider />

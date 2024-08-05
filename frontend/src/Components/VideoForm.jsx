@@ -90,6 +90,51 @@ function VideoForm() {
                         className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
                     />
                 </div>
+                <div className="mb-8">
+                    <label className="block text-white text-lg font-krona mb-2" htmlFor="pricing">
+                        Pricing
+                    </label>
+                    <div className="flex items-center space-x-4">
+                        <label className="text-white">
+                            <input
+                                type="radio"
+                                name="pricing"
+                                value="free"
+                                checked={formData.pricing === 'free'}
+                                onChange={handleChange}
+                                className="mr-2"
+                            />
+                            Free
+                        </label>
+                        <label className="text-white">
+                            <input
+                                type="radio"
+                                name="pricing"
+                                value="paid"
+                                checked={formData.pricing === 'paid'}
+                                onChange={handleChange}
+                                className="mr-2"
+                            />
+                            Paid
+                        </label>
+                    </div>
+                </div>
+
+                {formData.pricing === 'paid' && (
+                    <div className="mb-8">
+                        <label className="block text-white text-lg font-krona mb-2" htmlFor="price">
+                            Price
+                        </label>
+                        <input
+                            type="number"
+                            name="price"
+                            id="price"
+                            value={formData.price}
+                            onChange={handleChange}
+                            className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
+                        />
+                    </div>
+                )}
                 <div className="flex items-center justify-between">
                     <button
                         type="submit"

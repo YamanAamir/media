@@ -7,7 +7,7 @@ export const HeroSection = () => {
             <div className='flex flex-col justify-start md:gap-20 gap-32 md:py-32 py-12 text-white items-center mt-[90px] z-20 rounded-3xl min-h-screen '
                 style={
                     {
-                        backgroundImage: `url(${BgHero})`,
+                        backgroundImage: `url('${BgHero}')`,
                         backgroundSize: '1500px',
                         // backgroundPosition: 'center',
                         backgroundRepeat: 'no-repeat',

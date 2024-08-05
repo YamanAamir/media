@@ -1,32 +1,33 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { FaPlay, FaPause } from "react-icons/fa";
 // import Ellipse1 from '../assets/Ellipse-1.svg'
+import songVideo from '../assets/video.mp4'
 
 function Categories() {
     const categories = [
         {
-            video: "https://kota-content.b-cdn.net/app/uploads/2023/10/Kota-loop.mp4",
+            video: songVideo,
             head: 'SUMO',
             title: 'Strlght',
             content: 'Videos',
             des: '300 + High-Quality Footage',
         },
         {
-            video: "https://kota-content.b-cdn.net/app/uploads/2023/10/Kota-loop.mp4",
+            video: songVideo,
             head: 'ICON',
             title: 'Janset',
             content: 'Images',
             des: '1000 + Stunning Photos',
         },
         {
-            video: "https://kota-content.b-cdn.net/app/uploads/2023/10/Kota-loop.mp4",
+            video: songVideo,
             head: 'SKULL CRUSJER',
             title: 'Crushy',
             content: 'Audio',
             des: '300 + Professional-Grade Audio',
         },
         {
-            video: "https://kota-content.b-cdn.net/app/uploads/2023/10/Kota-loop.mp4",
+            video: songVideo,
             head: 'SECOND SLIDE',
             title: 'Yomot!',
             content: 'Templates',

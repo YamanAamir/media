@@ -23,7 +23,7 @@ const Sidebar = ({ userType }) => {
         className={`fixed inset-y-0 left-0 bg-[#1C1C24] text-white w-64 transform transition-transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} xl:translate-x-0 h-full`}
       >
         <div className="p-4 mt-12 flex items-center justify-between">
-          <h2 className="text-lg font-bold font-krona">Lyme Cay Media</h2>  
+          <h2 className="text-lg font-bold font-krona">Lyme Cay Media</h2>
         </div>
         <nav className="mt-16 text-xl font-krona space-y-4">
           {userType === 'admin' && (
@@ -63,7 +63,7 @@ const Sidebar = ({ userType }) => {
               <Link to="/contributors" className="flex items-center p-2 hover:bg-black duration-300 rounded-lg">
                 <FaTachometerAlt className="mr-3 text-3xl" /> DASHBOARD
               </Link>
-              <Link to="/profile" className="flex items-center p-2 hover:bg-black duration-300 rounded-lg">
+              <Link to="/contributors/profile" className="flex items-center p-2 hover:bg-black duration-300 rounded-lg">
                 <FaUserCircle className="mr-3 text-3xl" /> PROFILE
               </Link>
               <Link to="/contributors/uploads" className="flex items-center p-2 hover:bg-black duration-300 rounded-lg">
