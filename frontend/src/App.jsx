@@ -13,6 +13,10 @@ import ContributorDashboard from './Pages/ContributorDashboard';
 import UploadMedia from './Components/UploadMedia';
 import ProtectedRoute from './Components/ProtectedRoute';
 import ContributorProfile from './Components/ContributorProfile';
+import Register from './Pages/Register';
+import Login from './Pages/Login';
+import ContributorRegister from './Pages/ContributorRegister';
+import Cart from './Components/Cart';
 
 
 
@@ -51,6 +55,22 @@ const ScrollToTop = () => {
         {
           path: 'support',
           element: <Support />
+        },
+        {
+          path: 'register',
+          element: <Register />
+        },
+        {
+          path: 'contributor-register',
+          element: <ContributorRegister />
+        },
+        {
+          path: 'cart',
+          element: <Cart />
+        },
+        {
+          path: 'login',
+          element: <Login />
         },
         {
           path: 'blogs',

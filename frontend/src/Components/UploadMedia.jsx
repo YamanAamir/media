@@ -37,6 +37,6 @@ function UploadMedia() {
             }
         </div>
     );
-}
+}   
 
 export default UploadMedia;
